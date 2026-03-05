@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <title>FinControl+</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <h1>Fin<span>Control</span></h1>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Registrar</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="hero">
+            <h2 class="slogan">Take control of your finances.</h2>
+        </section>
+
+        <section id="expense-form-section">
+            <h2>Record New Expense</h2>
+
+            <form id="expense-form">
+
+                <div class="input-group">
+
+                    <div class="input-container">
+                        <label for="description" class="label">Description</label>
+                        <input type="text" id="description" name="description" required>
+                        <div class="underline"></div>
+                    </div>
+
+                    <div class="input-container">
+                        <label for="amount" class="label">Total Value</label>
+                        <input type="number" id="amount" name="amount" step="0.01" min="0" required>
+                        <div class="underline"></div>
+                    </div>
+
+
+                    <div class="input-container">
+                        <label for="purchaseDate" class="label">Date of Purchase</label>
+                        <input type="date" id="purchaseDate" name="purchaseDate" required>
+                        <div class="underline"></div>
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <div class="input-container">
+                        <label for="dueDate" class="label">Due Date</label>
+                        <input type="date" id="dueDate" name="dueDate" required>
+                        <div class="underline"></div>
+                    </div>
+
+
+
+                    <div class="input-container">
+                        <label for="installments" class="label">Amount of Instalments</label>
+                        <input type="number" id="installments" name="installments" min="1" step="1" required>
+                        <div class="underline"></div>
+                    </div>
+                </div>
+                <button type="submit" class="btn-submit">
+                    Save Expense
+                </button>
+
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2026 • Desenvolvido por <a href="https://github.com/Larissasthefany?tab=repositories" target="_blank">
+                Larissa Sthefany</a></p>
+    </footer>
+
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>
